@@ -1,0 +1,74 @@
+@font-face{
+	font-family: Brushsci;
+	src: url('fuente/BRUSHSCI.TTF');
+}
+
+nav.titulo{
+	text-align: center;
+	font-family: Brushsci;
+	font-size: 24px;
+	color: #EEEEEE;
+	text-decoration: underline;
+	text-shadow:2px 2px #222222;
+}
+
+body{
+	background-image: url('imagen9.jpg');
+}
+
+
+#galeria {
+	padding:0;
+	margin:40px auto 0 auto; 
+	list-style-type:none; 
+	height:380px; 
+	width:954px; 
+}
+#galeria li {
+	width:90px;
+	height:380px; 
+	float:left;
+	border-left:2px solid #000;
+}
+#galeria li img {
+	transition-duration:1000ms;
+	overflow: hidden;
+	height:380px; 
+	width:90px; 
+	border:0;
+}
+#galeria li:hover {
+	transition-duration:1000ms;
+	width:400px;
+	height: 100%;
+}
+#galeria li:hover img{
+	width:400px;
+	z-index: 1;
+}
+
+.derecha {
+	position: relative;
+	float: right;
+	margin-right: 15%;
+}
+nav.link{
+	text-align: center;
+	padding: 12px;
+	margin-top: 60px;
+	position: relative;
+	float: right;
+	right: 500px;
+	width: 400px;
+	border-radius: 8px;
+	background: -webkit-linear-gradient(left, rgba(0,255,150,0), rgba(0,255,150,1)); /* For Safari */
+	background: -o-linear-gradient(right, rgba(0,255,150,0), rgba(0,255,150,1)); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, rgba(0,255,150,0), rgba(0,255,150,1)); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, rgba(0,255,150,0), rgba(0,255,150,1)); /* Standard syntax (must be last) */
+}
+footer {
+	height:20px;
+	position: fixed;
+	bottom:0;
+	left:10px;
+}
